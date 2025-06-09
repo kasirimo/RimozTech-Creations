@@ -241,7 +241,7 @@ input:checked + .slider:before {
 
 .cards {
   position: relative;
-  height: 600px;
+  height: 500px;
   background-color: #000;
   display: flex;
   flex-direction: column;
@@ -334,3 +334,108 @@ input:checked + .slider:before {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* ---- Contact Section ---- */
+
+.contact-container {
+    background-color: #121212;
+    width: 100%;
+}
+
+.socials a {
+    color: var(--whiteColor);
+}
+
+.socials a:hover {
+    color: var(--primaryColor);
+    font-size: 0.8rem;
+}
+
+.socials a:active {
+    border: none;
+}
+
+.inputbox {
+  position: relative;
+  width: 80%;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~span,
+.inputbox input:focus ~span {
+  color: var(--secondColor);
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0,75em;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--secondColor);
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
+  height: 44px;
+}
+
+textarea {
+    background-color: transparent !important;
+    border: 1px solid var(--secondColor) !important;
+}
+
+.form-button {
+    background-color: var(--secondColor) !important;
+    
+}
+
+input, textarea {
+    color: var(--whiteColor) !important;
+}
+
+textarea {
+    width: 80% !important;
+}
+
+textarea::placeholder {
+    color: #6c757d !important;
+}
+
+/* ---- Footer Section ---- */
+
+footer {
+    background-color: #121212;
+}
+

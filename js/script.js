@@ -104,3 +104,4 @@ function showInner(entries) {
 }
 
 innerCard.forEach(el => observeIn.observe(el));
+
