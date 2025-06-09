@@ -48,14 +48,15 @@
         
         <section id="hero">
             <div class="hero d-flex justify-content-between align-items-center">
-                <div class="hero-content d-flex justify-content-around align-items-center">
+                <div class="hero-content px-3 d-flex flex-column justify-content-center align-items-center h-100">
                     <div class="hero-text">
-                        <h3>Hello there,</h3>
-                        <h1 class="hero-typewriter" id="typewriter"></h1>
-                        <h2>Creating a digital footprint</h2>
-                        <p>My name is Dennis Kasirimo and I am a website developer</p>
+                        <h3>Hello <span style="color: var(--secondColor)">there,</span></h3>
+                        <h1 class="hero-typewriter" id="typewriter" style="color: var(--primaryColor)"></h1>
+                        <h2>Creating a <span style="color: var(--secondColor)">digital</span> footprint</h2>
+                        <p class="mt-4">My name is Dennis Kasirimo and I am a website developer</p>
+                        <a href="" class="btn hero-contact">Get in touch</a>
                     </div>
-                    <div class="hero-img">
+                    <div class="hero-img mt-4">
                         <!-- Hero Image goes here -->
                         <img src="assets/me.jpg" alt="me" class="img-fluid rounded-circle" />                        
                     </div>
@@ -67,7 +68,7 @@
             <section id="about">
                 <div class="about px-3 py-5">
                     <div class="about-content">
-                        <h2>About Me</h2>
+                        <h2 class="headings">About Me</h2>
                         <p>
                             Hello, I am a website developer designing, building and launching websites to the internet.
                             I started learning and having an interest in Information Technology my first year in high school.
@@ -79,6 +80,22 @@
                     </div>
                     <div class="about-img">
                         <!-- My about image goes here -->
+                        <img src="assets/me2.jpg" alt="me" class="img-fluid about-im mt-5"/>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            
+            <section id="skills">
+                <div class="skills py-5 px-3">
+                    <h2 class="headings">My Skills</h2>
+
+                    <div class="skill-container">
+                        <div class="skill-cont">
+                            <img src="assets/javascript-736400_1280.png" class="img-fluid" alt="html logo" />
+                            <h3>HTML</h3>
+                        </div>
                     </div>
                 </div>
             </section>

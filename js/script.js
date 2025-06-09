@@ -30,18 +30,41 @@ navOpen.addEventListener("click", () => {
         navItems[i].style.paddingLeft = String(count) + "px";
         count = Number(count);
     }
-})
+});
 
 /*
-console.log(navItems);
-let count = 0;
+ Hero Heading Text Animation Typewriter
+*/
 
-for (let i = 0; i < navItems.length; i++) {
-    count += 20;
-    count = String(count);
-    navItems[i].style.paddingLeft = String(count) + "px";
-    count = Number(count);
+const typewriter = document.getElementById("typewriter");
+const text = ["Web Developer","Grow your business"];
+const speed = 100;
+const eraseSpeed = 50;
+const delayBetweenText = 1000;
+let i = 0;
+let j = 0;
+let isDeleting = false;
+
+function type() {
+    const currentText = text[i];
+
+    if (!isDeleting) {
+        typewriter.textContent = currentText.substring(0, j + 1);
+        j++;
+        if (j === currentText.length) {
+            isDeleting = true;
+            setTimeout(type, delayBetweenText);
+            return;
+        }
+    } else {
+        typewriter.textContent = currentText.substring(0, j - 1);
+        j--;
+        if (j === 0) {
+            isDeleting = false;
+            i = (i + 1) % text.length;
+        }
+    }
+    setTimeout(type, isDeleting ? eraseSpeed : speed);
 }
 
-console.log(count);
-*/
+type();

@@ -138,7 +138,7 @@ input:checked + .slider:before {
     top: 2%;
     left: 2%;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .navbar-brand a {
@@ -162,7 +162,7 @@ input:checked + .slider:before {
 }
 
 .hero-content {
-    width: 80%;
+    width: 100%;
 }
 
 .hero-img {
@@ -170,21 +170,34 @@ input:checked + .slider:before {
 }
 
 .hero-img img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 50% !important;
 }
 
-.red-circle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    border-right: 2px solid var(--primaryColor);
-    border-left: 2px solid var(--primaryColor);
+.hero-contact {
+    background-color: var(--primaryColor) !important;
+    color: var(--whiteColor) !important;
 }
 
 /* ---- About Section ---- */
 
+.about-im {
+    border-radius: 20px;
+}
+
+.headings {
+    position: relative;
+    padding-block: 10px;
+    margin-bottom: 20px;
+}
+
+.headings::after {
+    content: "";
+    width: 20%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primaryColor);
+}
