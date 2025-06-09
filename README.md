@@ -88,3 +88,5 @@ Or Have  full viewport width and height slideshow showcasing the works i have do
 
 # Considerations of skill section
 Thinking of putting the skill text in the middle of the container and use sketched lines to show skill with small icon image and name surrounding the skill text
+
+Also considering using animation where only see skill text moving inside a container from left to right and then repeat

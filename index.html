@@ -15,24 +15,33 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">        
 
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     </head>
     <body>
         
-        <header class="navbar navbar-dark d-flex justify-content-between px-4 rounded-pill">
-            <h1 class="navbar-brand"><a href="">Rimoz<span class="logo-tag">Tech</span></a></h1>
-            <div class="nav-divider"></div>
-
+        <header class="navbar navbar-dark justify-content-between px-4 fixed-top">
             <!-- Repsonsive navigation opener button goes here -->
+            <button class="nav-btn nav-open"><i class="ri-menu-2-line"></i></button>
 
-            <nav class="navbar-collapse collapse" id="navigation">
+            <nav id="navigation" class="navigation">
+                <button class="nav-btn nav-close"><i class="ri-close-fill"></i></button>
                 <!-- Navigation close button here -->
-                <ul class="navbar-nav">
+                <ul class="navbar-nav navs-links">
                     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="#skill" class="nav-link">Skill</a></li>
                     <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
+   
+            <h1 class="navbar-brand"><a href="">Rimoz<span class="logo-tag">Tech</span></a></h1>
+
+            <!-- Dark mode to light mode switch -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label> 
+            
         </header>
 
         <!-- Hero -->
@@ -75,5 +84,6 @@
             </section>
         </main>
 
+        <script src="js/script.js"></script>
     </body>
 </html>
