@@ -105,3 +105,13 @@ function showInner(entries) {
 
 innerCard.forEach(el => observeIn.observe(el));
 
+/*
+ Dark mode switch
+*/
+
+const switchMode = document.querySelector(".switch input");
+
+switchMode.addEventListener("click", () => {
+    document.documentElement.style.setProperty("--bgColor", "white");
+    document.documentElement.style.setProperty("--whiteColor", "black");
+})

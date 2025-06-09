@@ -139,7 +139,7 @@ input:checked + .slider:before {
 }
 
 .nav-open {
-    background-color: transparent;
+    background-color: #2a2a2a !important;
     outline: none;
     color: white !important;
 }
@@ -300,7 +300,7 @@ input:checked + .slider:before {
 .inner-card-open {
     height: 40%;
     border-radius: 0;
-    transition-delay: 2s; /* === Remove this class properties on big screen === */
+    transition-delay: height 2s, border-radius 2s; /* === Remove this class properties on big screen === */
 }
 
 .cards:hover .inner-card {
@@ -437,5 +437,5 @@ textarea::placeholder {
 
 footer {
     background-color: #121212;
+    height: 50px;
 }
-
