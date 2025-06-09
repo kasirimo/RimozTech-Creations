@@ -56,8 +56,9 @@
                         <p class="mt-4">My name is Dennis Kasirimo and I am a website developer</p>
                         <a href="" class="btn hero-contact">Get in touch</a>
                     </div>
-                    <div class="hero-img mt-4">
+                    <div class="hero-img mt-5">
                         <!-- Hero Image goes here -->
+                        <div class="red-circle"></div>
                         <img src="assets/me.jpg" alt="me" class="img-fluid rounded-circle" />                        
                     </div>
                 </div>
@@ -66,10 +67,10 @@
 
         <main>
             <section id="about">
-                <div class="about px-3 py-5 hidden">
+                <div class="about px-3 py-5">
                     <div class="about-content">
-                        <h2 class="headings">About Me</h2>
-                        <p>
+                        <h2 class="headings hidden">About Me</h2>
+                        <p class="hidden">
                             Hello, I am a website developer designing, building and launching websites to the internet.
                             I started learning and having an interest in Information Technology my first year in high school.
                             I started out learning the basics of HTML and CSS.
@@ -80,7 +81,7 @@
                     </div>
                     <div class="about-img">
                         <!-- My about image goes here -->
-                        <img src="assets/me2.jpg" alt="me" class="img-fluid about-im mt-5"/>
+                        <img src="assets/me2.jpg" alt="me" class="img-fluid about-im mt-5 hidden"/>
                     </div>
                 </div>
             </section>
@@ -88,36 +89,36 @@
             <!-- Skills Section -->
             
             <section id="skills">
-                <div class="skills py-5 px-3 hidden">
-                    <h2 class="headings">My Skills</h2>
+                <div class="skills py-5 px-3">
+                    <h2 class="headings hidden">My Skills</h2>
 
-                    <div class="skill-container d-flex flex-column mt-5 gap-3">
+                    <div class="skill-container d-flex flex-column mt-5 gap-3 hidden">
                         <div class="skill-cont w-75 mx-auto rounded py-3 text-center">
                             <img src="assets/html logo.png" class="img-fluid skill-img rounded-circle mx-auto" alt="html logo" />
                             <h3 class="skill-text mt-3">HTML5</h3>
                         </div>
 
-                        <div class="skill-cont w-75 mx-auto rounded py-3 text-center">
+                        <div class="skill-cont w-75 mx-auto rounded py-3 text-center hidden">
                             <img src="assets/css logo.png" class="img-fluid skill-img rounded-circle mx-auto" alt="html logo" />
                             <h3 class="skill-text mt-3">CSS3</h3>
                         </div>
 
-                        <div class="skill-cont w-75 mx-auto rounded py-3 text-center">
+                        <div class="skill-cont w-75 mx-auto rounded py-3 text-center hidden">
                             <img src="assets/bootstrap logo.png" class="img-fluid skill-img rounded-circle mx-auto" alt="html logo" />
                             <h3 class="skill-text mt-3">Bootstrap 5</h3>
                         </div>
 
-                        <div class="skill-cont w-75 mx-auto rounded py-3 text-center">
+                        <div class="skill-cont w-75 mx-auto rounded py-3 text-center hidden">
                             <img src="assets/javascript-736400_1280.png" class="img-fluid skill-img rounded-circle mx-auto" alt="html logo" />
                             <h3 class="skill-text mt-3">Javascript</h3>
                         </div>
 
-                        <div class="skill-cont w-75 mx-auto rounded py-3 text-center">
+                        <div class="skill-cont w-75 mx-auto rounded py-3 text-center hidden">
                             <img src="assets/git logo.webp" class="img-fluid skill-img rounded-circle mx-auto" alt="html logo" />
                             <h3 class="skill-text mt-3">Git</h3>
                         </div>
 
-                        <div class="skill-cont w-75 mx-auto rounded py-3 text-center">
+                        <div class="skill-cont w-75 mx-auto rounded py-3 text-center hidden">
                             <img src="assets/github logo.png" class="img-fluid skill-img rounded-circle mx-auto" alt="html logo" />
                             <h3 class="skill-text mt-3">Github</h3>
                         </div>
@@ -125,6 +126,50 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Work Section -->
+            
+            <section id="work">
+                <div class="work hidden py-5 px-3">
+                    <h2 class="headings">My Work</h2>
+
+                    <div class="row mt-5 gap-5 justify-content-center">
+                        <div class="cards col-10 d-flex work-cont jil-cont justify-content-center">
+                            <div class="inner-card d-flex flex-column justify-content-center align-items-center text-center">
+                                <h2>Jil international</h2>
+                                <p>Jil is a company that sells airplane parts</p>
+                                <a href="" class="btn bg-white visit-link">Visit Link <i class="ri-link"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="cards col-10 d-flex work-cont mobius-cont justify-content-center">
+                            <div class="inner-card d-flex flex-column justify-content-center align-items-center text-center">
+                                <h2>Mobius</h2>
+                                <p>Jil is a company that sells airplane parts</p>
+                                <a href="" class="btn bg-white visit-link">Visit Link <i class="ri-link"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="cards col-10 d-flex work-cont coffee-cont justify-content-center">
+                            <div class="inner-card d-flex flex-column justify-content-center align-items-center text-center">
+                                <h2>Rimoz Cafe</h2>
+                                <p>Jil is a company that sells airplane parts</p>
+                                <a href="" class="btn bg-white visit-link">Visit Link <i class="ri-link"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="cards col-10 d-flex work-cont dental-cont justify-content-center">
+                            <div class="inner-card d-flex flex-column justify-content-center align-items-center text-center">
+                                <h2>Rimoz Dental</h2>
+                                <p>Jil is a company that sells airplane parts</p>
+                                <a href="" class="btn bg-white visit-link">Visit Link <i class="ri-link"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
         </main>
 
         <script src="js/script.js"></script>

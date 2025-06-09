@@ -88,3 +88,19 @@ function showElement(entries, observer) {
 }
 
 allElements.forEach(el => observer.observe(el));
+
+const innerCard = document.querySelectorAll(".inner-card");
+
+const observeIn = new IntersectionObserver(showInner);
+
+function showInner(entries) {
+    entries.forEach(el => {
+        if (el.isIntersecting) {
+            el.target.classList.add("inner-card-open");
+        } else {
+            el.target.classList.remove("inner-card-open");
+        }
+    })
+}
+
+innerCard.forEach(el => observeIn.observe(el));
