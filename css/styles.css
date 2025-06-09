@@ -35,6 +35,17 @@ img {
     max-width: 100% !important;
 }
 
+.hidden {
+    transition: 0.5s ease;
+    transform: translatey(50px);
+    opacity: 0;
+}
+
+.show {
+    transform: translatey(0);
+    opacity: 1;
+}
+
 /* ---- Header Section ---- */
 
 header {
@@ -154,7 +165,7 @@ input:checked + .slider:before {
 
 .hero {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     --hbg-color: #121212;
     background-color: var(--hbg-color);
     background-size: cover;
@@ -200,4 +211,19 @@ input:checked + .slider:before {
     bottom: 0;
     left: 0;
     background-color: var(--primaryColor);
+}
+
+/* ---- Skill Section ---- */
+
+.skill-cont {
+    background-color: #121212;
+}
+
+.skill-img {
+    width: 150px;
+    height: 150px;
+}
+
+.skill-text {
+    font-family: "Merriweather Sans", sans-serif !important;
 }

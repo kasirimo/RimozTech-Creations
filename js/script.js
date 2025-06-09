@@ -68,3 +68,23 @@ function type() {
 }
 
 type();
+
+/*
+ Show Elements on scroll animation
+*/
+
+const allElements = document.querySelectorAll(".hidden");
+
+const observer = new IntersectionObserver(showElement);
+
+function showElement(entries, observer) {
+    entries.forEach(elem => {
+        if (elem.isIntersecting) {
+            elem.target.classList.add("show");
+        } else {
+            elem.target.classList.remove("show");
+        }
+    })
+}
+
+allElements.forEach(el => observer.observe(el));
