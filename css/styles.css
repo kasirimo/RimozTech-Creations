@@ -175,6 +175,10 @@ header {
     background-color: var(--primaryColor);
 }
 
+.about-content p {
+    width: 100% !important;
+}
+
 /* ---- Skill Section ---- */
 
 .skill-cont {
