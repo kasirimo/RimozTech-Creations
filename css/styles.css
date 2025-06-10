@@ -87,9 +87,10 @@ header {
 }
 
 .nav-open {
-    background-color: var(--accentColor) !important;
+    background-color: transparent !important;
     outline: none;
     color: var(--whiteColor) !important;
+    font-size: 1.5rem;
 }
 
 .nav-close {
