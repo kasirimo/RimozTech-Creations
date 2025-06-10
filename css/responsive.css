@@ -1,0 +1,100 @@
+@media screen and (min-width: 992px) {
+    .navigation {
+        position: static;
+        background-color: inherit;
+        width: unset;
+        height: unset;
+        border-radius: 0;
+    }
+    
+    .navs-links {
+        margin-top: 0 !important;
+        padding-left: 0;
+        display: flex !important;
+        flex-direction: row !important;
+        
+    }
+
+    .nav-link {
+        margin-inline: 10px !important;
+        color: var(--whiteColor) !important;
+    }
+
+    .nav-link:hover {
+        color: var(--primaryColor) !important;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    
+
+    .hero-content {
+        width: 80%;
+    }
+
+    /* ---- About ---- */
+
+    .about-content {
+        flex-basis: 50%;
+    }
+
+    .about-im {
+        width: 400px;
+    }
+
+    .about-content p {
+        line-height: 2 !important;
+        
+    }
+
+    .headings {
+        margin-inline: auto;
+    }
+
+    .headings::after {
+        left: 50%;
+        transform: translatex(-50%);
+    }
+
+    .inner-card-open {
+        height: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .hero-img img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .about-content p {
+        width: 380px;
+        
+    }
+
+    .about-im {
+        width: 400px;
+        
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+
+    .hero-img img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+    .hero {
+        height: 80vh;
+    }
+}
