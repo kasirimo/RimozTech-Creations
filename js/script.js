@@ -6,9 +6,9 @@ const navigation = document.getElementById("navigation");
 const navItems = document.querySelectorAll(".nav-item");
 
 navClose.addEventListener("click", () => {
-    navigation.style.left = "-100%";
-    navigation.style.borderTopRightRadius = "100%";
-    navigation.style.borderBottomRightRadius = "100%";
+    navigation.style.right = "-100%";
+    navigation.style.borderTopLeftRadius = "100%";
+    navigation.style.borderBottomLeftRadius = "100%";
 
     for (let i = 0; i < navItems.length; i++) {
         navItems[i].style.paddingLeft = "0";
@@ -18,9 +18,9 @@ navClose.addEventListener("click", () => {
 
 
 navOpen.addEventListener("click", () => {
-    navigation.style.left = "0";
-    navigation.style.borderTopRightRadius = "0";
-    navigation.style.borderBottomRightRadius = "0";
+    navigation.style.right = "0";
+    navigation.style.borderTopLeftRadius = "0";
+    navigation.style.borderBottomLeftRadius = "0";
 
     let count = 0;
 
@@ -104,14 +104,3 @@ function showInner(entries) {
 }
 
 innerCard.forEach(el => observeIn.observe(el));
-
-/*
- Dark mode switch
-*/
-
-const switchMode = document.querySelector(".switch input");
-
-switchMode.addEventListener("click", () => {
-    document.documentElement.style.setProperty("--bgColor", "white");
-    document.documentElement.style.setProperty("--whiteColor", "black");
-})

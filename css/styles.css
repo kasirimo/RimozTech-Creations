@@ -2,6 +2,7 @@
     --primaryColor: #e50914;
     --secondColor: #3a86ff;
     --bgColor: #1e1e1e;
+    --secbgColor: #121212;
     --accentColor: #2a2a2a;
     --whiteColor: #fff;
     --darkColor: #000;
@@ -54,59 +55,6 @@ header {
     margin-inline: auto;
 }
 
-/* -- Dark mode to Light mode switch -- */
-/* The switch - the box around the slider */
-.switch {
-  font-size: 12px;
-  position: relative;
-  display: inline-block;
-  width: 3.5em;
-  height: 2em;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  --background: #000;
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--background);
-  transition: .5s;
-  border-radius: 30px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 1.4em;
-  width: 1.4em;
-  border-radius: 50%;
-  left: 10%;
-  bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px var(--whiteColor);
-  background: var(--background);
-  transition: .5s;
-}
-
-input:checked + .slider {
-  background-color: #522ba7;
-}
-
-input:checked + .slider:before {
-  transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px var(--whiteColor);
-}
-
 /* Navigation */
 .navigation {
     width: 100%;
@@ -115,8 +63,8 @@ input:checked + .slider:before {
     background-color: var(--whiteColor);
     position: fixed;
     top: 0;
-    left: -100%;
-    border-radius: 0 100% 100% 0;
+    right: -100%;
+    border-radius: 100% 0 0 100%;
     transition: 0.5s ease !important;
 }
 
@@ -139,7 +87,7 @@ input:checked + .slider:before {
 }
 
 .nav-open {
-    background-color: #2a2a2a !important;
+    background-color: var(--accentColor) !important;
     outline: none;
     color: white !important;
 }
@@ -147,7 +95,7 @@ input:checked + .slider:before {
 .nav-close {
     position: absolute;
     top: 2%;
-    left: 2%;
+    right: 2%;
     border: none;
     font-size: 2rem;
 }
@@ -166,7 +114,7 @@ input:checked + .slider:before {
 .hero {
     width: 100%;
     height: 95vh;
-    --hbg-color: #121212;
+    --hbg-color: var(--secbgColor);
     background-color: var(--hbg-color);
 }
 
@@ -222,7 +170,7 @@ input:checked + .slider:before {
 /* ---- Skill Section ---- */
 
 .skill-cont {
-    background-color: #121212;
+    background-color: var(--secbgColor);
 }
 
 .skill-img {
@@ -336,7 +284,7 @@ input:checked + .slider:before {
 /* ---- Contact Section ---- */
 
 .contact-container {
-    background-color: #121212;
+    background-color: var(--secbgColor);
     width: 100%;
 }
 
