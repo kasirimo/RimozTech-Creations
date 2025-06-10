@@ -101,4 +101,8 @@
     .hero-content {
         width: 90%;
     }
+
+    .about-im {
+        transform: scale(0.85);
+    }
 }
