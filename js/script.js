@@ -4,6 +4,7 @@ const navClose = document.querySelector(".nav-close");
 const navOpen = document.querySelector(".nav-open");
 const navigation = document.getElementById("navigation");
 const navItems = document.querySelectorAll(".nav-item");
+const navLinks = document.querySelectorAll(".nav-link");
 
 navClose.addEventListener("click", () => {
     navigation.style.right = "-100%";

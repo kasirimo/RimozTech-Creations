@@ -60,9 +60,6 @@
         transform: translatex(-50%);
     }
 
-    .inner-card-open {
-        height: 0;
-    }
 }
 
 @media screen and (max-width: 576px) {
@@ -104,5 +101,11 @@
 
     .about-im {
         transform: scale(0.85);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .inner-card-open {
+        height: 0;
     }
 }

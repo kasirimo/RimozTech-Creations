@@ -57,10 +57,10 @@ header {
 
 /* Navigation */
 .navigation {
-    width: 100%;
+    width: 70%;
     height: 100%;
     color: var(--darkColor);
-    background-color: var(--whiteColor);
+    background-color: var(--bgColor);
     position: fixed;
     top: 0;
     right: -100%;
@@ -78,7 +78,7 @@ header {
 }
 
 .nav-link {
-    color: var(--darkColor) !important;
+    color: var(--whiteColor) !important;
 }
 
 .nav-btn {
@@ -89,15 +89,16 @@ header {
 .nav-open {
     background-color: var(--accentColor) !important;
     outline: none;
-    color: white !important;
+    color: var(--whiteColor) !important;
 }
 
 .nav-close {
     position: absolute;
     top: 2%;
-    right: 2%;
+    right: 10%;
     border: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: var(--whiteColor);
 }
 
 .navbar-brand a {
