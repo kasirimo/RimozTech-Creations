@@ -168,8 +168,6 @@ input:checked + .slider:before {
     height: 95vh;
     --hbg-color: #121212;
     background-color: var(--hbg-color);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .hero-content {
