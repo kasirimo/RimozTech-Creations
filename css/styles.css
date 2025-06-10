@@ -51,7 +51,7 @@ img {
 
 header {
     background-color: var(--accentColor);
-    width: 90%;
+    width: 100%;
     margin-inline: auto;
 }
 
