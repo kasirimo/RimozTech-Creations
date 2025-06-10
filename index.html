@@ -60,7 +60,7 @@
                         <h1 class="hero-typewriter" id="typewriter" style="color: var(--primaryColor)"></h1>
                         <h2>Creating a <span style="color: var(--secondColor)">digital</span> footprint</h2>
                         <p class="my-4">My name is Dennis Kasirimo and I am a website developer</p>
-                        <a href="" class="btn hero-contact">Get in touch</a>
+                        <a href="#contact" class="btn hero-contact">Get in touch</a>
                     </div>
                     <div class="hero-img mt-5">
                         <!-- Hero Image goes here -->
@@ -73,7 +73,7 @@
 
         <main>
             <section id="about">
-                <div class="about px-3 py-5 d-sm-flex justify-content-around">
+                <div class="about px-3 py-5 d-sm-flex justify-content-around align-items-center">
                     <div class="about-content">
                         <h2 class="headings hidden mb-5">About Me</h2>
                         <p class="hidden text-wrap">
@@ -145,31 +145,31 @@
                             <div class="inner-card d-flex flex-column justify-content-center align-items-center text-center">
                                 <h2>Jil international</h2>
                                 <p>Jil is a company that sells airplane parts</p>
-                                <a href="" class="btn bg-white visit-link">Visit Site <i class="ri-link"></i></a>
+                                <a href="https://jilinternational.org/" class="btn bg-white visit-link" target="_blank">Visit Site <i class="ri-link"></i></a>
                             </div>
                         </div>
 
                         <div class="cards col-10 col-sm-5 d-flex work-cont mobius-cont justify-content-center">
                             <div class="inner-card d-flex flex-column justify-content-center align-items-center text-center">
                                 <h2>Mobius</h2>
-                                <p>Jil is a company that sells airplane parts</p>
-                                <a href="" class="btn bg-white visit-link">Visit Site <i class="ri-link"></i></a>
+                                <p>A demo website for Mobius, a car manufacturing company in Kenya</p>
+                                <a href="https://kasirimo.github.io/Mobius/" class="btn bg-white visit-link" target="_blank">Visit Site <i class="ri-link"></i></a>
                             </div>
                         </div>
 
                         <div class="cards col-10 col-sm-5 d-flex work-cont coffee-cont justify-content-center">
                             <div class="inner-card d-flex flex-column justify-content-center align-items-center text-center">
                                 <h2>Rimoz Cafe</h2>
-                                <p>Jil is a company that sells airplane parts</p>
-                                <a href="" class="btn bg-white visit-link">Visit Site <i class="ri-link"></i></a>
+                                <p>A demo cafe website</p>
+                                <a href="https://kasirimo.github.io/Rimoz-Cafe/" class="btn bg-white visit-link" target="_blank">Visit Site <i class="ri-link"></i></a>
                             </div>
                         </div>
 
                         <div class="cards col-10 col-sm-5 d-flex work-cont dental-cont justify-content-center">
                             <div class="inner-card d-flex flex-column justify-content-center align-items-center text-center">
                                 <h2>Rimoz Dental</h2>
-                                <p>Jil is a company that sells airplane parts</p>
-                                <a href="" class="btn bg-white visit-link">Visit Site <i class="ri-link"></i></a>
+                                <p>A demo dental website</p>
+                                <a href="https://kasirimo.github.io/Rimoz-Dentist/" class="btn bg-white visit-link" target="_blank">Visit Site <i class="ri-link"></i></a>
                             </div>
                         </div>
 
@@ -190,18 +190,20 @@
                             <p><i class="ri-phone-fill"></i> <a href="tel:+254705863062" style="color: var(--primaryColor); text-decoration: none;">+254 705 863 062</a></p>
 
                             <article class="socials mt-5">
-                                <a href="" class="btn social-link"><i class="ri-facebook-circle-fill"></i></a>
-                                <a href="" class="btn social-link"><i class="ri-tiktok-fill"></i></a>
-                                <a href="" class="btn social-link"><i class="ri-twitter-fill"></i></a>
+                                <a href="" class="btn social-link" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                                <a href="https://www.tiktok.com/@rimoz_tech.creations" class="btn social-link" target="_blank"><i class="ri-tiktok-fill"></i></a>
+                                <a href="https://x.com/rimozTech" class="btn social-link" target="_blank"><i class="ri-twitter-fill"></i></a>
                             </article>
                         </div>
 
-                        <form action="" method="post" class="col-10 col-sm-6 d-block mt-3 mt-sm-0">
+                        <form action="https://api.web3forms.com/submit" method="post" class="col-10 col-sm-6 d-block mt-3 mt-sm-0">
                             <h3 style="color: var(--primaryColor)">Get In Touch</h3>
+
+                            <input type="hidden" name="access_key" value="b00a8f7b-b12e-43c3-911b-a50313e40680">
 
                             <section class="forms">
                                 <label for="user-name" class="inputbox my-3">
-                                    <input required="required" type="text" name="email">
+                                    <input required="required" type="text" name="name">
                                     <span>Name</span>
                                     <i></i>
                                 </label>
@@ -213,7 +215,7 @@
                                 </label>
 
                                 <label for="message" class="form-label mt-3 d-block">
-                                    <textarea class="form-control d-block" rows="4" placeholder="Talk to me..." name="user-message" id="user-message" required></textarea>
+                                    <textarea class="form-control d-block" rows="4" placeholder="Talk to me..." name="message" id="user-message" required></textarea>
                                 </label>
 
                                 <button type="submit" class="btn d-block form-button w-50 mt-4">Send</button>

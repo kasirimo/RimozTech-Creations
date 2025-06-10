@@ -142,8 +142,14 @@ header {
 
 
 .hero-contact {
+    border: 1px solid var(--primaryColor) !important;
     background-color: var(--primaryColor) !important;
     color: var(--whiteColor) !important;
+    transition: 0.5s ease;
+}
+
+.hero-contact:hover {
+    background-color: transparent !important;
 }
 
 /* ---- About Section ---- */
